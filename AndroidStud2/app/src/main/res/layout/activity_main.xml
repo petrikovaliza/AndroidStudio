@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8DACD"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/main_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="149dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="149dp"
+            android:text="Список дел"
+            android:textColor="#452424"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/user_data"
+            android:layout_width="246dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="91dp"
+            android:ems="10"
+            android:hint="Введите что-та"
+            android:inputType="text"
+            android:textColor="#452424"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_label" />
+
+        <Button
+            android:id="@+id/my_button"
+            android:layout_width="154dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="148dp"
+            android:backgroundTint="#AED9A0A0"
+            android:text="Нажми"
+            android:textColor="#452424"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_data" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="396dp"
+            android:layout_height="396dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="1dp"
+            android:textColor="#452424"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_button" />
+
+        <ImageView
+            android:id="@+id/my_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="59dp"
+            app:layout_constraintEnd_toStartOf="@+id/main_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icons8__64"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
